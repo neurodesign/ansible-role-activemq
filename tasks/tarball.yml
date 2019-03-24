@@ -139,6 +139,7 @@
     owner: root
     group: root
     mode: 0755
+  when: ansible_distribution == 'Red Hat Enterprise Linux'
 
 - name: "Generate systemd service file"
   template:
