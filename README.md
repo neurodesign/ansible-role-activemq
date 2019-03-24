@@ -27,6 +27,9 @@ User & Group activemq runs under:
 * `amq_home_dir:  /var/lib/activemq`
 * `amq_log_dir: /var/log/activemq`
 
+Configuration details:
+* `activemq_instance_name: localhost`
+
 Installation directory:
 * `amq_install_dir: /opt`
 * `amq_run_dir: "/opt/{{ amq_user }}"`

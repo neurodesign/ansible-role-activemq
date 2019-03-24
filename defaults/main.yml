@@ -34,6 +34,9 @@ amq_env_vars:
 # Use custom broker xml config
 activemq_custom_xml_config: True
 activemq_custom_xml_config_path: 'activemq.xml.j2'
+activemq_instance_name: localhost
+activemq_admin_user: admin
+activemq_admin_password: admin
 
 # activemq broker config
 activemq_openwire_transport_connector_uri: 'tcp://0.0.0.0:61616?maximumConnections=1000&amp;wireformat.maxFrameSize=104857600'
