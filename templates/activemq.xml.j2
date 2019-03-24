@@ -18,7 +18,7 @@
               <users>
                 <authenticationUser username="{{ activemq_admin_user }}" password="{{ activemq_admin_password }}" groups="admins"/>
 
-            {% if activemq_authentication %}
+            {% if activemq_authentication is defined %}
               {% for item in activemq_authentication %}
                 <authenticationUser username="{{ item.username }}" password="{{ item.password }}" groups="{{ item.groups }}"/>
               {% endfor %}

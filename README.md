@@ -29,6 +29,8 @@ User & Group activemq runs under:
 
 Configuration details:
 * `activemq_instance_name: localhost`
+* `activemq_admin_user: localhost`
+* `activemq_admin_password: localhost`
 
 Installation directory:
 * `amq_install_dir: /opt`
