@@ -6,7 +6,7 @@
   when: amq_install_mode is defined
 
 - include: "apt.yml"
-  when: ansible_pkg_mgr == "apt"
+  when: ansible_pkg_mgr == "apt" and (amq_install_mode is not defined or amq_install_mode == "apt")
 
 - debug: msg="amq_install_mode is not defined - doing nothing ..."
   when: amq_install_mode is not defined
