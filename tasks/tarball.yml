@@ -123,14 +123,13 @@
     owner: root
     group: root
 
-- name: "Generate /etc/sysconfig/activemq Redhat"
+- name: "Generate /etc/sysconfig/activemq"
   template:
     src: sysconfig_activemq.j2
-    dest: /etc/sysconfig/activemq
+    dest: /opt/activemq
     owner: root
     group: root
     mode: 0755
-  when: ansible_distribution == 'Red Hat Enterprise Linux'
 
 - name: "Generate systemd service file"
   template:
