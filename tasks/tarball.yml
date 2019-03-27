@@ -126,7 +126,7 @@
 - name: "Generate /etc/sysconfig/activemq"
   template:
     src: sysconfig_activemq.j2
-    dest: /opt/activemq
+    dest: /opt/activemq/environment
     owner: root
     group: root
     mode: 0755
